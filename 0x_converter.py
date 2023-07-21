@@ -7,12 +7,12 @@ import math
 # print("Do you want to continue converting?(No/Yes): ")
 # opt=0
 bb=0
-A = 10
-B = 11
-C = 12
-D = 13
-E = 14
-F = 15
+# A = 10
+# B = 11
+# C = 12
+# D = 13
+# E = 14
+# F = 15
 
 while True:
     # print("Please input any number:(if you want to quit,type q) ")
@@ -46,17 +46,17 @@ while True:
             array.append(y)
         # if 15>y>10:
         if y == 10:
-            array.append(A)
+            array.append("A")
         if y == 11:
-            array.append(B)
+            array.append("B")
         if y == 12:
-            array.append(C)
+            array.append("C")
         if y == 13:
-            array.append(D)
+            array.append("D")
         if y == 14:
-            array.append(E)
+            array.append("E")
         if y == 15:
-            array.append(F)       
+            array.append("F")       
         
         a=a-1
         if a<0:
