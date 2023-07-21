@@ -45,7 +45,7 @@ while True:
         b=b-m
         # single digit condition
         match y:
-            case ">0 & <10":
+            case _ if y>0 and y<10:
                 array.append(y)
             case 10:
                 array.append("A")
