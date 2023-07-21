@@ -37,16 +37,19 @@ while True:
     a=int(math.log2(b)/4)
     sum=0
     array=[]
-    for i in range(0,10):
+    while a>=0:
+    # for i in range(0,10):
         y=int(b/(math.pow(16,a)))
         # print("y: ", y)
         m=sum+math.pow(16,a)*y
         # substract parts of the original already altered to HEX
         b=b-m
-        # single digit condition
+        
         match y:
+            # single digit condition
             case _ if y>0 and y<10:
                 array.append(y)
+            # include two digits conditions
             case 10:
                 array.append("A")
             case 11:
@@ -59,24 +62,9 @@ while True:
                 array.append("E")
             case 15:
                 array.append("F")
-            
-                # include two digits conditions
-        # if y == 10:
-        #     array.append("A")
-        # if y == 11:
-        #     array.append("B")
-        # if y == 12:
-        #     array.append("C")
-        # if y == 13:
-        #     array.append("D")
-        # if y == 14:
-        #     array.append("E")
-        # if y == 15:
-        #     array.append("F")       
-        
         a=a-1
-        if a<0:
-            break
+        # if a<0:
+        #     break
     print("Hex of the number is: ", array)
     # print("Do you want to continue converting?(No/Yes): ")
     # opt=input()
