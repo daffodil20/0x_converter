@@ -7,6 +7,13 @@ import math
 # print("Do you want to continue converting?(No/Yes): ")
 # opt=0
 bb=0
+A = 10
+B = 11
+C = 12
+D = 13
+E = 14
+F = 15
+
 while True:
     # print("Please input any number:(if you want to quit,type q) ")
     bbb=input("Please input any number:(if you want to quit,type q) ")
@@ -35,7 +42,22 @@ while True:
         # print("y: ", y)
         m=sum+math.pow(16,a)*y
         b=b-m
-        array.append(y)
+        if 0 < y < 10:
+            array.append(y)
+        # if 15>y>10:
+        if y == 10:
+            array.append(A)
+        if y == 11:
+            array.append(B)
+        if y == 12:
+            array.append(C)
+        if y == 13:
+            array.append(D)
+        if y == 14:
+            array.append(E)
+        if y == 15:
+            array.append(F)       
+        
         a=a-1
         if a<0:
             break
